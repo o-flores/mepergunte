@@ -1,17 +1,23 @@
 import { Button } from '../components/Button';
 import { useHistory } from 'react-router-dom'
+import { useAuth } from '../hooks/useAuth';
+
 
 export function Home() {
   const history = useHistory();
+  const { user, signInWithGoogle } = useAuth();
 
-  function navigateToNewRoom() {
-    history.push('/rooms/new')
+  async function handleCreateRoom() {
+    if (!user) {
+      await signInWithGoogle();
+    }
+    history.push('/rooms/new');
   }
   return (
     <main>
       <div>
         <button
-          onClick={navigateToNewRoom}
+          onClick={handleCreateRoom}
         >
           Entre com o google
         </button>
