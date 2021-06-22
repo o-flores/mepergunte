@@ -22,8 +22,10 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
 
   const [user, setUser] = useState<User>();
 
-  // usando o array vazio a função dentro do useEffect vai ser disparada apenas uma vez
+  // usando o array vazio a função dentro do useEffect vai ser disparada apenas uma vez quando o componente for montado
   useEffect(() => {
+
+    //O metodo onAuthStateChanged retorna um firebase.Unsubscribe que é a função q retira o listener
     const unsubscribe = auth.onAuthStateChanged(user => {
       if (user) {
         const { displayName, photoURL, uid } = user;
@@ -41,7 +43,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
       }
     });
 
-    //retornar uma funçao que descadastre dos eventListeners para que eles n fiquem rodando infinito
+    //retornar o metodo do firebase.unsubscribe para retirar o evento na hora da desmontagem
     return () => {
       unsubscribe();
     }
