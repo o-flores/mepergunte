@@ -1,11 +1,9 @@
 import { Button } from '../components/Button';
 import { Link } from 'react-router-dom'
-import { useAuth } from '../hooks/useAuth';
 import illustrationImg from '../images/illustration.svg';
 
 
 export function NewRoom() {
-  const { user } = useAuth();
   return (
     <div id="auth-page">
       <aside>
@@ -16,7 +14,6 @@ export function NewRoom() {
       <main>
         <div className="main-content">
           <h2>Crie uma nova sala</h2>
-          {/* <p>Crie uma nova sala</p> */}
           <form>
             <input
               type="text"
