@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/mepergunte/static/css/main.fd234ec4.chunk.css",
+    "main.js": "/mepergunte/static/js/main.292ac8fe.chunk.js",
+    "main.js.map": "/mepergunte/static/js/main.292ac8fe.chunk.js.map",
+    "runtime-main.js": "/mepergunte/static/js/runtime-main.f4c9962d.js",
+    "runtime-main.js.map": "/mepergunte/static/js/runtime-main.f4c9962d.js.map",
+    "static/js/2.22461caa.chunk.js": "/mepergunte/static/js/2.22461caa.chunk.js",
+    "static/js/2.22461caa.chunk.js.map": "/mepergunte/static/js/2.22461caa.chunk.js.map",
+    "index.html": "/mepergunte/index.html",
+    "static/css/main.fd234ec4.chunk.css.map": "/mepergunte/static/css/main.fd234ec4.chunk.css.map",
+    "static/js/2.22461caa.chunk.js.LICENSE.txt": "/mepergunte/static/js/2.22461caa.chunk.js.LICENSE.txt",
+    "static/media/copy.2f36f99e.svg": "/mepergunte/static/media/copy.2f36f99e.svg",
+    "static/media/google-icon.df15d8e5.svg": "/mepergunte/static/media/google-icon.df15d8e5.svg",
+    "static/media/illustration.ae7276f0.svg": "/mepergunte/static/media/illustration.ae7276f0.svg",
+    "static/media/like.78334eb8.svg": "/mepergunte/static/media/like.78334eb8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4c9962d.js",
+    "static/js/2.22461caa.chunk.js",
+    "static/css/main.fd234ec4.chunk.css",
+    "static/js/main.292ac8fe.chunk.js"
+  ]
+}
