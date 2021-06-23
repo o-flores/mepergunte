@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <Switch>
         <AuthContextProvider>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/rooms/new" component={NewRoom} />
-          <Route path="/rooms/:id" component={Room} />
+          <Route exact path="/mepergunte" component={Home} />
+          <Route exact path="/mepergunte/rooms/new" component={NewRoom} />
+          <Route path="/mepergunte/rooms/:id" component={Room} />
         </AuthContextProvider>
       </Switch>
     </BrowserRouter>
