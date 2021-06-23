@@ -50,8 +50,24 @@
         justify-content: space-between;
         align-items: center;
 
+        .user-info {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+
+          > span {
+            margin-left: 1rem;
+            color: #EDF2F4;
+          };
+        }
+
         span {
-          font-size: 0.9rem;
           color: #8D99AE;
         }
 
