@@ -11,7 +11,7 @@
 
   p {
     margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .user-info {
@@ -40,6 +40,36 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+
+      button {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        transition: filter 0.2s;
+
+        span {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          filter: brightness(0.7);
+        }
+
+        &.like-button {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          color: #2B2D42;
+
+          &.liked {
+            color: #D90429;
+
+            svg path {
+              stroke: #D90429;
+            }
+          }
+        }
+      }
 
       span {
         margin-right: 0.5rem;

@@ -1,8 +1,7 @@
 import '../styles/questionCard.scss';
-import likeImg from '../images/like.svg'
+import { ReactNode } from 'react';
 
 type Question = {
-  id: string,
   author: {
     name: string,
     avatar: string,
@@ -10,6 +9,7 @@ type Question = {
   content: string,
   isHighLighted: boolean,
   isAnswered: boolean,
+  children?: ReactNode,
 }
 
 export function QuestionCard(props: Question) {
@@ -22,8 +22,7 @@ export function QuestionCard(props: Question) {
           <span>{props.author.name}</span>
         </div>
         <div className="right-content">
-          <span>1</span>
-          <img src={likeImg} alt="Like icon" />
+          {props.children}
         </div>
       </div>
     </div>

@@ -5,6 +5,18 @@
     justify-content: space-around;
     padding: 1rem;
     align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background: rgba(0,0,0,0.8);
+        margin-left: 0.5rem;
+        height: 40px;
+      }
+    }
   }
 
   .content {
@@ -42,6 +54,7 @@
         resize: vertical;
         min-height: 120px;
         color: #2B2D42;
+        font-size: 1.2rem;
       }
 
       .form-footer {
