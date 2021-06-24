@@ -14,7 +14,7 @@ type Question = {
 
 export function QuestionCard(props: Question) {
   return (
-    <div className="question-card-container">
+    <div className={`question-card-container ${props.isHighLighted ? 'highLighted' : ''}`}>
       <p>{props.content}</p>
       <div className="user-info">
         <div className="left-content">

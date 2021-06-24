@@ -9,6 +9,11 @@
   box-shadow: 0px 2px 12px black;
   color: #2B2D42;
 
+  &.highLighted {
+    border: 2px #D90429 solid;
+    background: #EDF2F4;
+  }
+
   p {
     margin-bottom: 0.5rem;
     font-size: 1rem;
@@ -46,6 +51,7 @@
         background: transparent;
         cursor: pointer;
         transition: filter 0.2s;
+        margin-right: 0.5rem;
 
         span {
           margin-right: 0.5rem;
