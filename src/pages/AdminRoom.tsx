@@ -44,6 +44,13 @@ export function AdminRoom() {
       .transaction((value) => !value);
   }
 
+  async function handleSetQuestionAsAnswered(id: string) {
+    await database.ref(`rooms/${roomId}/questions/${id}`).update({
+      isAnswered: true,
+    });
+    // await database.ref(`rooms/${roomId}/questions/`).orderByChild('/isAnswered');
+  }
+
   return (
     <div id="room-page">
       <header>
@@ -63,20 +70,24 @@ export function AdminRoom() {
             key={question.id}
             {...question}
           >
-            <button
-              className="check-button"
-              type="button"
-            // onClick={() => handleDeleteQuestion(question.id)}
-            >
-              <img src={checkIcon} alt="Check icon" />
-            </button>
-            <button
-              className="answer-button"
-              type="button"
-              onClick={() => handleHighLightedQuestion(question.id)}
-            >
-              <img src={answerIcon} alt="Answer icon" />
-            </button>
+            {!question.isAnswered && (
+              <>
+                <button
+                  className="check-button"
+                  type="button"
+                  onClick={() => handleSetQuestionAsAnswered(question.id)}
+                >
+                  <img src={checkIcon} alt="Check icon" />
+                </button>
+                <button
+                  className="answer-button"
+                  type="button"
+                  onClick={() => handleHighLightedQuestion(question.id)}
+                >
+                  <img src={answerIcon} alt="Answer icon" />
+                </button>
+              </>
+            )}
             <button
               className="delete-button"
               type="button"

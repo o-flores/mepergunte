@@ -12,17 +12,20 @@ type Question = {
   children?: ReactNode,
 }
 
-export function QuestionCard(props: Question) {
+export function QuestionCard({ author, isAnswered, isHighLighted, children, content}: Question) {
   return (
-    <div className={`question-card-container ${props.isHighLighted ? 'highLighted' : ''}`}>
-      <p>{props.content}</p>
+    <div className={`question-card-container
+      ${isHighLighted && !isAnswered ? 'highLighted' : ''}
+      ${isAnswered ? 'answered' : ''}`}
+    >
+      <p>{content}</p>
       <div className="user-info">
         <div className="left-content">
-          <img src={props.author.avatar} alt={props.author.name} />
-          <span>{props.author.name}</span>
+          <img src={author.avatar} alt={author.name} />
+          <span>{author.name}</span>
         </div>
         <div className="right-content">
-          {props.children}
+          {children}
         </div>
       </div>
     </div>
