@@ -12,7 +12,7 @@
 </p>
 
 ### :nerd_face: What I learned?
-  - How to integrate firebase with App
+  - How to integrate firebase with React App
   - Using firebase to authenticate user
   - Using firebase RealTime Database
   - How to create security rules to allow access to data
