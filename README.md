@@ -11,7 +11,7 @@
    
 </p>
 
-### :nerd_face: What I learned?
+## :nerd_face: What I learned?
   - How to integrate firebase with React App
   - Using firebase to authenticate user
   - Using firebase RealTime Database
@@ -40,12 +40,12 @@ To run this project, install it locally using npm:
 2. Clone the project:
 ```javascript
   cd projects
-  git clone https://github.com/o-flores/mepergunte.git
+  git clone https://github.com/o-flores/busca-livre.git
 ```
 
 3. install dependencies:
 ```javascript
-  cd mepergunte
+  cd busca-livre
   npm i
 ```
 
