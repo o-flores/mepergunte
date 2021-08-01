@@ -12,19 +12,19 @@
 </p>
 
 ## :nerd_face: What I learned?
-  - How to integrate firebase with React App
-  - Using firebase to authenticate user
-  - Using firebase RealTime Database
-  - How to create security rules to allow access to data
-  - Using custom enviroment variables in a React App
-  - How to create custom hooks 
-  - Using Sass as a CSS preprocessor
+  - **_How to integrate firebase with React App_**
+  - **_Using firebase to authenticate user_**
+  - **_Using firebase RealTime Database_**
+  - **_How to create security rules to allow access to data_**
+  - **_Using custom enviroment variables in a React App_**
+  - **_How to create custom hooks_**
+  - **_Using Sass as a CSS preprocessor_**
 
   ## :computer:  Tecnologies
-- [React](https://reactjs.org)
-- [Firebase](https://firebase.google.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Sass](https://sass-lang.com/)
+- **_[React](https://reactjs.org)_**
+- **_[Firebase](https://firebase.google.com/)_**
+- **_[TypeScript](https://www.typescriptlang.org/)_**
+- **_[Sass](https://sass-lang.com/)_**
 
 
 
